@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>여름방학 특강 신청하기</h3>
+    <form action="#" method="get">
+            <fieldset>
+                <legend>교육과정</legend>
+                <ul>
+                    <li class="level">
+                        <label class="title">영어회화</label>
+                        <input type="text" value="오전 9:00~11:00" readonly>
+                        <span>(초급레벨)</span>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>신청자 기본 정보</legend>
+                    <ul>
+                        <li>
+                            <label class="title">이름</label>
+                            <input type="text" placeholder="이름 입력">
+                        </li>
+                        <li>
+                            <label>이메일</label>
+                            <input type="email" placeholder="이메일 입력">
+                        </li>
+                        <li>
+                            <label>비밀번호</label>
+                            <input type="password" placeholder="비밀번호 입력">
+                        </li>
+                        <li>
+                            <form>
+                                <label class="title">학과</label>
+                                <select>
+                                    <option value="">학과를 선택하세요</option>
+                                    <option value="컴퓨터공학과">컴퓨터공학과</option>
+                                    <option value="국어국문학과">국어국문학과</option>
+                                    <option value="영어영문학과">영어영문학과</option>
+                                    <option value="전자 융합과">전자 융합과</option>
+                                </select>
+                            </form>
+                        </li>
+                        <li calss="gender_item">
+                            <span class="title">성별</span>
+                            <input type="radio" name="gender" checked id="man">
+                            <label for="man">남자</label>
+                            <input type="radio" name="gender" id="woman">
+                            <label for="woman">여자</label>
+                        </li>
+                        <li calss="hobby_item">
+                            <span class="title">관심사</span>
+                            <input type="checkbox" name="hobby" id="ho1">
+                            <lable for="ho1">여행</lable>
+                            <input type="checkbox" name="hobby" id="ho2">
+                            <lable for="ho2">게임</lable>
+                            <input type="checkbox" name="hobby" id="ho3">
+                            <lable for="ho3">운동</lable>
+                            <input type="checkbox" name="hobby" id="ho4">
+                            <lable for="ho4">공연</lable>
+                            <input type="checkbox" name="hobby" id="ho5">
+                            <lable for="ho5">기타</lable>
+                        </li>
+
+                    </ul>
+            </fieldset>
+            <div class="btm">
+                <button type="submit">수강신청</button>
+                <button type="reset">다시쓰기</button>
+            </div>
+        </form>
+</body>
+</html>
