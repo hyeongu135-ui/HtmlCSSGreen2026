@@ -1,0 +1,10 @@
+@charset 'utf-8';
+/* <span class="sp">
+   <label for="생년월일">
+ */ 
+*{
+    text-align: center;
+}
+form{
+    border-style: none;
+}

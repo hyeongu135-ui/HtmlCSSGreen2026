@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex_form06</title>
+
+    <style>
+        *{
+            font-size: 13px;
+            padding: 0 0;
+            font-family: sans-serif;
+        }
+        h1{
+            color: #333;
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+        }
+
+        form{
+            margin: 0 auto;
+            width:  800px;
+            border-radius: 8px;
+            background-color: aliceblue;
+            border : 1px solid #080808;
+            
+
+        }
+        ul{
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+        }
+        .fo{
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+            
+        }
+
+        .po{
+            width: 50px;
+        }
+        li{
+
+            font-size: 10px;
+            padding: 5px;
+        }
+        .E-mail{
+            width: 100px;
+        }
+        .btn{
+            text-align: center;
+
+        }
+        .btn button{
+             border: none;
+             padding: 10px 15px;
+             margin: 20px;
+        }
+
+        .btn button[type="submit"]{
+            background-color: rgb(1, 185, 1); 
+            color: white;
+            cursor: pointer;
+        }
+        .btn button[type="reset"]{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .btn button[type="submit"]:hover{
+           background-color:  green;
+        }
+        .btn button[type="reset"]:hover{
+           background-color: rgb(184, 1, 1); 
+        }
+        .co{
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+            text-align:left;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<!-- comment
+fo
+po
+Gender -->
+<body>
+
+    <h1>Sign up</h1>
+    <p>Become a member of Andrew's Company, and enjoy a variety of benefits</p>
+    <form action="#" method="gey">
+            <ul> 
+                    <li>
+                        <label class="fo">Name</label>
+                        <input type="text" placeholder="이름을 입력하시오"/>
+                    </li>
+                    <li>
+                        <label class="fo">ID</label>
+                        <input type="text" placeholder="ID를 입력하시오"/>
+                    </li>
+                    <li>
+                        <label class="fo">password</label>
+                        <input type="password" placeholder="비밀번호를 입력하시오"/>
+                    </li>
+                    <li>
+                        <label class="fo">Confirm password</label>
+                        <input type="password" placeholder="비밀번호를 재입력하시오"/>
+                    </li>
+                    <li>
+                        <label class="fo">Mobile</label>
+                        <select name="fo" id="fo">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            </select>
+                            <input class="po" type="tel"> - <input class="po" type="tel">
+                        </li>
+                        <li>
+                            <label class="fo">E-mail</label>
+                            <input class="E-mail" type="text" placeholder="아이디"/> @ <input class="E-mail" type="text" placeholder="이메일"/>
+                            <select name="fo" id="fo">
+                                <option value="" >Direct input</option>
+                                <option value="naver.com"  >naver.com</option>
+                                <option value="daum.net" >daum.net</option>
+                                <option value="gmail.com" >gmail.com</option>
+                            </select>
+                        </li>
+                        <li >
+                            <label class="fo">Whether to receive emalil</label>
+                            <input type="checkbox" name="Acceptance" id="Acceptance"/></label>
+                            <label for="Acceptance">Acceptance</label>
+                        </li>
+                        <label>
+                            <label class="fo">interest</label>
+                            <input type="checkbox" name="interest" id="Movie"></label>
+                            <label for="Movie">Movie</label>
+                            <input type="checkbox" name="interest" id="Theater"></label>
+                            <label for="Theater">Theater</label>
+                            <input type="checkbox" name="interest" id="Travel"></label>
+                            <label for="Travel">Travel</label>
+                            <input type="checkbox" name="interest" id="Mountain Climbing"></label>
+                            <label for="Mountain Climbing">Mountain Climbing</label>
+                            <input type="checkbox" name="interest" id="Visiting a restaurant"></label>
+                            <label for="Visiting a restaurant">Visiting a restaurant</label>
+                            <input type="checkbox" name="interest" id="Volunteer"></label>
+                            <label for="Volunteer">Volunteer</label>
+                            <input type="checkbox" name="interest" id="Etc"></label>
+                            <label for="Etc">Etc</label>
+
+                        </li>
+                        <li >
+                            <label class="fo">Gender</label>
+                            <input type="radio" name="genderr" checked id="Male">
+                            <label for="Male">Male</label>
+                            <input type="radio" name="genderr" id="Female">
+                            <label for="Female">Female</label>
+                        </li>
+                        <li>
+                            <label class="fo">Path learned</label>
+                            <select>
+                                <option value="">Choose</option>
+                                <option value="internet">internet</option>
+                                <option value="Acquaintance">Acquaintance</option>
+                                <option value="Etc">Etc</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label class="co">Memo</label>
+                            <textarea id="comment" cols="40" rows="5"></textarea>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        <button type="submit">Sing up</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+    </form>
+</body>
+</html>
