@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 기본 width 사이즈가 600px이지만
+                paddingrhk border의 왼쪽, 오른쪽 여백의 값이 더해져
+                실제로는 600+여백값px가 된다.
+                원래의 지정한 기본 width로 지정하려면
+                box-sizing : border-box CSS를 지정하여야 한다.
+            */
+            width: 600px;
+            /* height: 90px; */
+            padding: 20px;
+            line-height: 50px;
+            font-size: 30px;
+            border: 10px solid red;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Calculatng the actual contest size
+    </div>
+</body>
+</html>
