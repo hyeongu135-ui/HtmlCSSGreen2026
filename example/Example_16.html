@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plan</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+        }
+        .box{
+            box-sizing: border-box;
+            width: 1500px;
+        }
+        .plan, .plan2{
+            display: inline-block;
+            width: 200px;
+            border: 1px solid black;
+            margin: 30px;
+            border-radius: 15px;
+            border: 1px solid whitesmoke;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 20px rgb(190, 190, 190);
+        }
+        h2,p{
+            text-align: center;
+        }
+        p{
+            margin: 0 auto;
+            border-bottom: 1px solid rgb(222, 221, 224);
+            padding-bottom: 15px;
+            width: 175px;
+        }
+        li{
+            list-style: none;
+            font-size: 10px;
+            padding-bottom: 5px;
+        }
+        button{
+            margin-left: 12px;
+            margin-bottom: 20px;
+            width: 175px;
+            height: 30px;
+            border-radius: 50px 50px 50px 50px;
+            border: 0;
+            background-color: rgb(22, 22, 97);
+            color: white;
+            cursor: pointer;
+        }
+        span{
+            color:  rgb(22, 22, 97);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        p{
+            color: #a8a8a8;
+            font-size: 13px;
+        }
+        .plan2{
+            background-color: rgb(22, 22, 97);
+            color: white;
+            width: 220px;
+            
+        }
+        .plan2 button{
+            background-color: white;
+            color : rgb(22, 22, 97);
+            margin : 22px;
+            margin-top: 10px;
+            cursor: pointer;
+
+        }
+        .plan2 span{
+            color: white;
+        }
+        .plan2 p{
+            border-bottom: 1px solid rgb(85, 72, 134);
+        }
+        button:hover{
+            background-color: rgb(9, 9, 39);
+        }
+        .plan2 button:hover{
+            background-color: rgb(180, 180, 180);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p class="Price"> <span>$9</span> / month</p>
+            <ul>
+                <li>
+                    5 Projects
+                </li>
+                <li>
+                    1GB Storage
+                </li>
+                <li>
+                    Email Support
+                </li>
+            </ul>
+            <button>Choose plan</button>
+        </div>
+        <div class="plan2">
+            <h2>Standard</h2>
+            <p class="Price"> <span>$19</span> / month</p>
+            <ul>
+                <li>
+                    20 Projects
+                </li>
+                <li>
+                    10GB Storage
+                </li>
+                <li>
+                    Priority Support
+                </li>
+            </ul>
+            <button>Choose plan</button>
+            </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <p class="Price"> <span>$39</span> / month</p>
+            <ul>
+                <li>
+                    Unlimited Projects Projects
+                </li>
+                <li>
+                    100GB Storage
+                </li>
+                <li>
+                    24/7 Support
+                </li>
+            </ul>
+            <button>Choose plan</button>
+            </div>
+        </div>
+</body>
+</html>

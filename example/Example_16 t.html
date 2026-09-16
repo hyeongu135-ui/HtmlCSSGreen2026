@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .plan{
+            display: inline-block;
+            width: 220px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            padding: 30px 20px;
+            margin: 0 15px;
+            text-align: center;
+
+        }
+        .featured{
+            background-color: #1e2a4a;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .plan h2{
+            font-size: 20px;
+            margin-bottom:15px ;
+        }
+        .Price{
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .featured .Price{
+            color: #ddd;
+        }
+
+        .Price span{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e2a4a;
+        }
+        .featured .Price span{
+            color: #ffffff;
+        }
+        hr{
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 15px 0 ;
+        }
+        .featured hr{
+            border-top: 1px solid #4a5a7a;
+        }
+        ul{
+            list-style: none;
+            text-align: left;
+        }
+        li{
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        button{
+            /* % = 부모의 가로사이즈를 참조함 */
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 20px;
+            background-color: #1e2a4a;
+            font-size: 14px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+        .featured button{
+            background-color: #ffffff;
+            color: #1e2a4a;
+        }
+        button:hover{
+            background-color: #3b3d7a;
+        }
+        .featured button:hover{
+            background-color: #dddddd;
+        }
+        /* 가상요소 선택자
+         ::before, ::after 가 존재함.
+         실제로 존재하지 않는 가상의 요소를 HTML앞에
+         또는 HTML 뒤에 삽입해주는 선택자이다.
+         단, 가상요소 선택자는 content(내용)이 필수임
+         content : '가상문자'
+         가상문자는 아이콘, 기호, 텍스트 다 가능함
+         이모지콘 : 윈도우키 + . ✔️
+         특수문자 : 한글자음 + 한자 √
+         유니코드 : \2713 = V 체크 모양
+        */
+        li::before{
+            content: '\2713  ';
+            color: #2ecc71;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p class="Price"> <span>$9</span> / month</p>
+            <hr>
+            <ul>
+                <li>
+                    5 Projects
+                </li>
+                <li>
+                    1GB Storage
+                </li>
+                <li>
+                    Email Support
+                </li>
+            </ul>
+            <button>Choose plan</button>
+        </div>
+        <div class="plan featured">
+            <h2>Standard</h2>
+            <p class="Price"> <span>$19</span> / month</p>
+            <hr>
+            <ul>
+                <li>
+                    20 Projects
+                </li>
+                <li>
+                    10GB Storage
+                </li>
+                <li>
+                    Priority Support
+                </li>
+            </ul>
+            <button>Choose plan</button>
+            </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <p class="Price"> <span>$39</span> / month</p>
+            <hr>
+            <ul>
+                <li>
+                    Unlimited Projects
+                </li>
+                <li>
+                    100GB Storage
+                </li>
+                <li>
+                    24/7 Support
+                </li>
+            </ul>
+            <button>Choose plan</button>
+            </div>
+        </div>
+</body>
+</html>

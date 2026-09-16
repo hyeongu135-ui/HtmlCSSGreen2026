@@ -1,0 +1,82 @@
+@charset "utf-8";
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+body{
+    
+    
+}
+h1{
+    padding-top: 200px ;
+    padding-bottom: ;
+    text-align: center; 
+    color:#03c75a;
+    font-weight: 900px;
+}
+div > .login_box{
+    margin: auto;
+    width: 400px;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+}
+div > .login_box input{ 
+    width: 340px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 1px solid #c7c7c7;
+} 
+div .login_box2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+div .login_box2 input{
+    display: inline-block;
+    margin-top: 6px;
+    width: 35px;
+    float: left;
+    font-size: 14px;
+    }
+div .login_box2 span{
+    font-size: 12px;
+    float: right;
+    margin-right: 35px ;
+    margin-top: 0;
+    margin-bottom: ;
+}
+
+div .login_box3 button{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin-left: 30px ;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #c7c7c7;
+}
+div .login_box3 .login{
+    border: 1px solid #03c75a;
+    background-color: #03c75a;
+    color: white;
+}
+
+div .login_box4{
+    text-align: center;
+    padding: 20px;
+}
+
+div .login_box4 a{
+    display: inline-block;
+    width: 130px;
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    size: 10px;
+}
+div .login_box4 span{
+    font-size: 13px;
+    color: #727070;
+}

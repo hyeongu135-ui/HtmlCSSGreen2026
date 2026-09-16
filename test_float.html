@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            border: 5px solid red;
+            width: 600px;
+            /* height: 200px; */
+            /* overflow:hidden 
+                -자식의 크기가 넘쳐 숨기고 싶을때
+            */
+            /* overflow: hidden; */
+            font-size: 10px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .child{
+            /* 부모의 요소를 상속 받는 CSS
+                = inherit
+            */
+            font-size: inherit;
+            background-color: gold;
+            width: 200px;
+            height: 100px;
+            /* 자식 float지정시 자식 성질을 잃어버림
+                - 높이값을 잃고 뜬상태가 됨
+            */
+            /* float: left; */
+            /* display: block; */
+            /* block 요소를 가운데 정렬 */
+            margin: 0 auto;
+            
+        }
+        .parent2{
+            /* border: 0 solid blue; */
+            width: 600px;
+        }
+        .top{
+            background-color: blueviolet;
+            height: 50px;
+        }
+        .left{
+            background-color: skyblue;
+            height: 50px;
+            width: 200px;
+            float: left;
+        }
+        .right{
+            background-color: brown;
+            height: 50px;
+            width: 400px;
+            float: right;
+        }
+        .clear{
+            /* clear는 float을 지정하지 않았지만 위 태그에
+            float을 지정한 경우 자동으로 상속 받는다.
+            고로, 위 float을 해제해야 한다.
+            해제 CSS = clear:both;
+            */
+            background-color: dodgerblue;
+            height: 50px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">child</div>
+    </div>
+    <hr>
+    <div class="parent2">
+        <div class="top">float:top</div>
+        <div class="left">float:left</div>
+        <div class="right">float:right</div>
+        <div class="clear">float:clear</div>
+    </div>
+
+</body>
+</html>
