@@ -1,0 +1,130 @@
+@charset "utf-8"; 
+/* 가로 800 */
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+.main{
+    width: 1000px;
+    /* clear: both; */
+    margin: 0px auto;
+
+}
+
+.list{
+    float: left;
+    color: #000000;
+}
+.total{
+    font-size: 20px;
+    margin: 9px;
+    margin-bottom: 0;
+    line-height: 51px;
+}
+
+
+.menu{
+    font-size: 15px;
+    float: right;
+    margin-right: 5px;
+    color: #979797;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.recom{
+    color: black;
+}
+.re{
+    margin-right: 60px;
+}
+.Product{
+    display: inline-block;
+    width: 300px;
+    /* display:  inline-block; */
+    /* float: left; */
+    margin: 10px;
+    cursor: pointer;
+    /* clear: both; */
+}
+button{
+  width: 300px;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #c9c7c7;
+  background-color: #ffffff ;
+  cursor: pointer;
+}
+img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.image_c{
+    position: relative;
+
+}
+
+#cart {
+    margin-top: 5px;
+    width: 16px;
+}
+.deil, .subname, .price, .review{
+    color: #979797;
+}
+.name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price{
+   text-decoration: line-through;
+}
+
+.sale{
+    color: #fa622f;
+    font-weight: bold;
+}
+
+.sale span{
+    color: black;
+}
+
+.review{
+    font-size: 12px;
+}
+.coupon{
+    position: absolute;
+    width: 32%;
+    height: 8%;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #bd76ff;
+    color: white;
+    font-size: 14px;
+}
+.kur{
+    text-align: center;
+    font-size: 10px;
+    width: 60px;
+    height: 20px;
+    background-color: #eceff3;
+    color: #672091;
+    margin-top: 5px;
+    border-radius: 5px;
+    line-height: 20px;
+}
+
+.pro{
+    
+}

@@ -1,0 +1,117 @@
+@charset
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    width: 1000px;
+}
+div .main{
+    display: block;
+    width: 800px;
+}
+div .table{
+    width: 800px;
+    display: inline-block;
+    
+
+}
+div .image{
+    display: block;
+    position: relative;
+    /* display: block; */
+    width: 200px;
+    height: 200px;
+    float: left;
+    cursor: pointer;
+    clear:both;
+    margin: 20px;
+}
+img{
+    border-radius: 15px;
+    
+}
+div .membership{
+    position: absolute;
+    left: 0;
+    top: 0;;
+    border-radius: 10px 0 10px 0;
+    background-color: rgb(255, 49, 49);
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    /* padding-top: 5px; */
+    color: white;
+    line-height: 45px;   
+    font-weight: bold; 
+    
+}
+div .membership2{
+    position: absolute;
+    left: 0;
+    top: 0;;
+    border-radius: 10px 0 10px 0;
+    background-color: rgb(102, 49, 250);
+    width: 170px;
+    height: 45px;
+    font-size: 25px;
+    text-align: center;
+    /* padding-top: 5px; */
+    color: white;
+    line-height: 45px;   
+    /* font-weight: bold;  */
+    
+}
+
+h1{
+    font-size: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    
+}
+
+div .text{
+    display: block;
+    margin: 30px;
+    float: left;
+    margin-top: 0;
+}
+div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    font-size: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+.review{
+    display: block;
+    color: #969696;
+    margin: 0px;
+    
+}
+
+.price{
+    color: #969696;
+    margin-left: 0;
+}
+.sale{
+    color: rgb(255, 49, 49);
+    font-weight: 1000;
+    font-size: 23px;
+}
+.total{
+    font-size: 25px;
+    font-weight: bold;
+}
