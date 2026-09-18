@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .nav{
+            list-style: none;
+            width: 900px;
+            display: flex;
+            background-color: #f1f0f0;
+            margin-left: 0;
+            margin: 0  auto;
+            padding: 0
+        }
+        li{
+            /* width: 40%; */
+            flex: 1;
+            font-size: 25px;
+            /* justify-content: space-between; */
+            text-align: center;
+            border: 1px solid red;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>

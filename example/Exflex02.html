@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .card-container{
+            width: 1000px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            /* line-height: 100px; */
+        }
+        .card{
+            padding-bottom: 10px;
+            width: 317px;
+            /* border: 1px solid red; */
+            text-align: center;
+            border-radius: 5px;
+            background-color: dodgerblue;
+            color: white;
+            font-size: 14px;
+            border: 1px solid red;
+        }
+        .card p{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>첫 번째 카드 설명입니다.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>두 번째 카드 설명입니다.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>세 번째 카드 설명입니다.</p>
+        </div>
+</div>
+</body>
+</html>

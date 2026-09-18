@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{height: 100%;}
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .main{
+            justify-content: space-between;            
+            width: 1100px;
+            display: flex;
+            
+        }
+        .product{
+            width: 20%;
+            margin: 20px;
+        }
+        .menu{
+
+            font-size: 13px;
+        }
+
+        img{
+            border-radius: 5px;
+        }
+        .image{
+            position: relative;
+        }
+        .zzim{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .price{
+            color: #cecccc;
+        }
+        .st{
+            font-weight: bold;
+            color: red;
+        }
+        span{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="product">
+            <div class="image">
+                <img src="/images/sale01.jpg" alt="">
+                <div class="zzim">
+                    ♡
+                </div>
+                </div>
+                <div class="menu name">++1등급 마장동 명품 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="menu price"><del>54,500원</del></div>
+                <div class="menu st">18% <span>44,300원</span></div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="/images/sale02.jpg" alt="">
+                <div class="zzim">
+                    ♡
+                </div>
+                </div>
+                <div class="menu name">++1등급 마장동 명품 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="menu price"><del>54,500원</del></div>
+                <div class="menu st">18% <span>44,300원</span></div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="/images/sale03.jpg" alt="">
+                <div class="zzim">
+                    ♡
+                </div>
+                </div>
+                <div class="menu name">++1등급 마장동 명품 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="menu price"><del>54,500원</del></div>
+                <div class="menu st">18% <span>44,300원</span></div>
+        </div>
+        <div class="product">
+            <div class="image">
+                <img src="/images/sale04.jpg" alt="">
+                <div class="zzim">
+                    ♡
+                </div>
+                </div>
+                <div class="menu name">++1등급 마장동 명품 한우 선물 세트 소고기 구이용 설 명절</div>
+                <div class="menu price"><del>54,500원</del></div>
+                <div class="menu st">18% <span>44,300원</span></div>
+        </div>
+    </div>
+</body>
+</html>
