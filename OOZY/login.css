@@ -1,0 +1,142 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#section{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(112, 112, 112);
+    width: 700px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgb(255, 255, 153);
+    }
+
+
+.main1{
+    color: #14563a;
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 0;
+}
+.main1 input{
+    width: 600px;
+    height: 70px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+.main1 input::placeholder{
+    font-size: 15px;
+}
+.main1 input:focus{
+    outline: none;
+    border: 1px solid #14563a;
+}
+.main1 button{
+    width: 600px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: #14563a;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main2 div a{
+  text-decoration: none;
+  color: black;
+}
+.main2{
+    width: 500px;
+    margin: 20px 0;
+}
+.main2 .logintype{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px ;  
+    font-size: 18px; 
+}
+
+.snslogin{
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.snslogin .sns{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.main2 .snslogin a{
+    display: flex;
+    /* width: 500px; */
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.main2 .snslogin .sns a.naver{
+    background-color: rgb(12, 192, 27);
+}
+.main2 .snslogin .sns a.kakao{
+    background-color: yellow;
+}
+.main2 .snslogin .sns a.facebook{
+    background-color: rgb(34, 111, 253);
+}
+.main2 .snslogin .sns a.google{
+    background-color: rgb(245, 244, 244);
+}
+.main2 .snslogin .sns a.apple{
+    background-color: rgb(4, 5, 4);
+}
+
+.main3{
+    text-align: center;
+}
+.main3 div{
+    width: 600px;
+    height: 60px;
+    border: 1px solid rgb(145, 143, 143);
+    line-height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px ;
+
+}
+.main3 a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.main3 p{
+    margin-bottom: 20px ;
+}
+h3{
+    margin: 20px;
+}
+span{
+    font-weight: bold;
+}
