@@ -33,8 +33,7 @@
                 </li>
                 <li class="menu tel">    
                     <label for="tel">휴대폰 번호<span>*</span></label><br>
-                    <input type="tel" id="tel" placeholder="010-0000-0000">
-                    <button type="submit">인증번호</button>
+                    <input type="tel" id="tel" placeholder="010-0000-0000"><button type="submit">인증번호</button>
                 </li>
                 <li class="menu bir">    
                     <label for="bir">생년월일<span class="choice">[선택]</span></label>
@@ -59,32 +58,34 @@
                 </li>
                 <li class="agree">
                     <h4>약관 동의</h4>
-                    <input class="chk" type="checkbox" id="alag"><span class="alag"></span>
-                    <label for="alag">전체 동의하기</label>
+                    <input class="chk" type="checkbox" id="chk">
+                    <label for="chk" class="chk"><span class="alag">전체 동의하기</span></label>
                     <hr>
                     <div>
                         <div>
-                        <input type="checkbox" id="z">
-                        <label for="z"><span class="essential">[필수]</span>이용약관 동의 <a class="see" href="#">보기</a></label>
-                    </div>
-                        <div>
-                        <input type="checkbox" id="x">
-                         <label for="x"><span class="essential">[필수]</span>개인정보 수집 및 이용 동의 <a class="see" href="#">보기</a></label>
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1"><span class="essential">[필수]</span>이용약관 동의 <a class="see" href="#">보기</a></label>
                         </div>
                         <div>
-                        <input type="checkbox"><span class="essential">[필수]</span>만 14세 이상입니다 <a class="see" href="#">보기</a>
+                            <input type="checkbox" id="chk2">
+                            <label for="chk2"><span class="essential">[필수]</span>개인정보 수집 및 이용 동의 <a class="see" href="#">보기</a></label>  
                         </div>
                         <div>
-                        <input type="checkbox"><span class="choice">[선택]</span>이벤트·혜택 정보 수신 동의 <a class="see" href="#">보기</a>
+                         <input type="checkbox" id="chk3">
+                            <label for="chk3"><span class="essential">[필수]</span>만 14세 이상입니다 <a class="see" href="#">보기</a></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="chk4">
+                            <label for="chk4"><span class="choice">[선택]</span>이벤트·혜택 정보 수신 동의 <a class="see" href="#">보기</a></label>
                         </div>
                     </div>
                 </li>
             </ul>
             <button class="new" type="submit">가입하기</button>
             <hr class="end">
+            <p class="user">이미 회원이신가요?</p>
+            <button class="log" type="submit">로그인</button>
         </form>
-        <p class="user">이미 회원이신가요?</p>
-        <button class="log">로그인</button>
     </section>
 </body>
 </html>

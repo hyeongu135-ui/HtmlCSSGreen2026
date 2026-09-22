@@ -72,6 +72,8 @@ li.menu.tel button{
     line-height: 40px;
     color: #14563a;
     cursor: pointer;
+
+
 }
 
 li.menu button{
@@ -97,10 +99,10 @@ li.menu > input{
     border: 1.5px solid #ccc;
     border-radius: 5px;
     margin-top: 5px;
+    padding-left: 10px;
 }
 .menu input::placeholder{
     font-size: 10px;
-    padding: 10px;
 }
 .menu input:focus{
     outline: none;
@@ -192,9 +194,40 @@ span.alag{
 }
 
 a.see{
+    text-decoration: none;
+    color: #797979;
+    border-bottom: 1px solid #797979;
+    display: inline-block;
     text-align: right;
+
 }
 
-.menu input{
-    padding-left: 10px;
+.log{
+    cursor: pointer;
+}
+
+.new{
+    cursor: pointer;
+
+}
+
+.new:hover{
+    background-color: white;
+    color:  #14563a;
+    border: 2px solid #14563a;
+}
+
+.log:hover{
+    background-color: #14563a;
+    color: white;
+}
+
+.agree div div {
+    position: relative;
+}
+
+a.see {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
 }
