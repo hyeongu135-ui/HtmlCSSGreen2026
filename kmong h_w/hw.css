@@ -1,0 +1,269 @@
+@charset "utf_8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#header ul, #header ul .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h3 span{
+    margin: 0 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#header ul{
+    line-height: 100%;
+}
+
+#header .logo{
+    font-weight: bold;
+    font-size: 20px;
+    width: 40%;
+}
+
+
+#header .menu p{
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#header .ac{
+    font-size: 12px;
+    width: 30%;
+
+}
+
+#header .ac li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#header .ac span{
+    background-color: aqua;
+    margin-left: 5px;
+    line-height: 20px;
+    color: blue;
+    border-radius: 5px;
+    height: 20px;
+    padding: 0 4px;
+}
+
+#header .new{
+    background-color: black;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#header .new .newac{
+    color: white;
+}
+
+#section{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+#section .ment{
+    width: 50%;
+    padding-left: 50px;
+    margin-top: 50px;
+
+    
+}
+
+
+#section .ment li{
+    margin-bottom: 25px;
+}
+
+#section .ment div{
+    position: relative;
+    align-items: center;
+}
+
+#section .ment input{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 14px #ccc;
+    padding-left: 20px;
+}
+
+#section .ment img{
+     position: absolute;
+     width: 30px;
+     height: 30px;
+    top: 50%;
+    right: 20px;
+
+    transform: translateY(-50%);
+}
+
+#section .imgs{
+    width: 30%;
+}
+
+#section .imgs img{
+ width: 100%;
+ height: 100%;
+}
+
+#section .menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;    
+}
+
+#section .menu a{
+    text-decoration: none;
+    background-color: #f7f7f7;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+}
+
+#section_2{
+    background-color: #f9f9f9;
+    margin: 15px;
+    padding-top: 150px;
+    padding-left: 10px;
+}
+
+#section_2 ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section_2 ul .all{
+    width: 20%;
+    margin-bottom: 50px;
+}
+
+#section_2 ul .all div a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+#section_2 ul .all div .addmenu{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+#section_2 ul .all div .addmenu span{
+    float: right;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+#section_2 ul .all div .product img{
+    width: 100%;
+}
+
+#section_2 ul .all .product_comnet,#section_2 ul .all div .price, .re , #section_2 ul .all div .profile{
+    color: black;
+}
+
+#section_2 ul .all .re .star{
+ color: greenyellow;
+}
+
+#section_2 ul .all .re .point{
+    color: #919191;
+}
+
+.mark_1{
+    background-color: rgb(230, 253, 246);
+    padding-bottom: 3px;
+}
+.mark_2{
+    background-color: rgb(250, 208, 251);
+    padding-bottom: 3px;
+}
+.mark_3{
+    background-color: rgb(220, 236, 249);
+    padding-bottom: 3px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.slider::before{
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    left: 2px;
+    top: 2px;
+
+    background-color: white;
+    border-radius: 50%;
+
+    transition: 0.2s;
+}
+
+/* 체크되면 배경색 변경 */
+.switch input:checked + .slider{
+    background-color: #14563a;
+}
+
+/* 체크되면 동그라미 오른쪽 이동 */
+.switch input:checked + .slider::before{
+    transform: translateX(18px);
+}
